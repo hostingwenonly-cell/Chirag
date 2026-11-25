@@ -1,0 +1,13 @@
+[project]
+name = "cashfree-checker"
+version = "1.1.0"
+description = "Fixed ₹230 Cashfree card checker API"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.117.1",
+    "uvicorn>=0.30.0",
+    "curl_cffi>=0.7.0",
+]
+
+[tool.vercel]
+entrypoint = "api:app"
